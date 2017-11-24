@@ -37,9 +37,9 @@
     </script>
   </head>
   <body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
+        <div class="reveal">
+            <div class="slides">
+<section>
 <h3>Lasta RemoteApi と RemoteApiGen</h3>
 <p>
   <small>2017-11-26</small>
@@ -47,9 +47,9 @@
 <p>
   <small>Created by awane</small>
 </p>
-				</section>
-				<section data-markdown>
-					<script type="text/template">
+</section>
+<section data-markdown>
+    <script type="text/template">
 ### Index
 
 1. 自己紹介
@@ -59,11 +59,11 @@
 5. 機能追加予定
 6. Special Thanks
 7. 質問タイム
-					</script>
-				</section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ## 1. 自己紹介
 
 Takeshi Awane (@p1us2er0)
@@ -71,11 +71,11 @@ Takeshi Awane (@p1us2er0)
 株式会社リブゲートという会社で、  
 Web開発エンジニアをしています。  
 フリーランスでも活動しています。
-					</script>
-				</section>
-				
-				<section data-markdown>
-					<script type="text/template">
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
 ## 1. 自己紹介
 
 最近利用しているFramework
@@ -87,148 +87,222 @@ Web開発エンジニアをしています。
 * Front End  
   Riot.js + Semantic UI  
   AngularJs + Bootstrap  
-					</script>
-				</section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ## 1. 自己紹介
 
 去年のDBFluteフェスでは、  
 [MailFluteでメール送信を楽しもう！](https://www.slideshare.net/p1us2er0/mailflute)  
 を発表しました。
-					</script>
-        </section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ## 1. 自己紹介
 
 去年のDBFluteフェス(2016-11-27)のスライド
 ![LastaFluteのLastaDoc](./image/mailflute-task.jpg)
-					</script>
-        </section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ## 1. 自己紹介
 
 対応しました。(2016-12-30)
 ![LastaFluteのLastaDoc(Mailflute Doc)](./image/mailflute-doc-github.png)
-					</script>
-        </section>
+    </script>
+</section>
 
-        <section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ## 1. 自己紹介
 
 Mailだけでなく、  
 Template、AppCls、Jobも対応済みです。
 ![LastaFluteのLastaDoc(Mailflute Doc)](./image/mailflute-doc.png)
-					</script>
-        </section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
+## 1. 自己紹介
+
+GitHub  
+https://github.com/lastaflute/lastaflute-test-fortress  
+[lastadocのサンプル](https://htmlpreview.github.io/?https://github.com/lastaflute/lastaflute-test-fortress/blob/master/dbflute_maihamadb/output/doc/lastadoc-fortress.html)  
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
 ### 2. 最近のシステム開発
 
 モノリス から マイクロサービス へ
-					</script>
-				</section>
+    </script>
+</section>
 
-        <section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 2. 最近のシステム開発
 
-モノリスのイメージ
+モノリスのイメージは?
 
 ![モノリス](./image/uluru.jpg)
-					</script>
-        </section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 2. 最近のシステム開発
 
-モノリスのイメージ
+モノリスのイメージは?
 
-1. XXXXXXXXXXXXXXX
-2. XXXXXXXXXXXXXXX
-3. XXXXXXXXXXXXXXX
-4. XXXXXXXXXXXXXXX
-5. XXXXXXXXXXXXXXX
-					</script>
-				</section>
+1. システムが大きすぎて保守が大変
+2. 新しい技術を取り入れづらい
+3. 障害があると全停止
+4. スケールしづらい  
+5. リプレイスしずらい
 
-        <section data-markdown>
-					<script type="text/template">
+etc.
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
 ### 2. 最近のシステム開発
 
-マイクロサービスのイメージ
+マイクロサービスのイメージは?
 
-![モノリス](./image/cells.jpg)
-					</script>
-        </section>
+![マイクロサービス](./image/cells.jpg)
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 2. 最近のシステム開発
 
-マイクロサービスのイメージ
+マイクロサービスのイメージは?
 
-1. XXXXXXXXXXXXXXX
-2. XXXXXXXXXXXXXXX
-3. XXXXXXXXXXXXXXX
-4. XXXXXXXXXXXXXXX
-5. XXXXXXXXXXXXXXX
-					</script>
-				</section>
+1. サービス(機能)の依存度を下げられる
+2. 新しい技術を使いやすい
+3. 障害の影響を局所化できる
+4. スケールしやすい
+5. サービスレベルでリプレイスしやすい
 
-        <section data-markdown>
-					<script type="text/template">
+etc.
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
+### 2. 最近のシステム開発
+
+ほんとにそうですか?
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
+### 2. 最近のシステム開発
+
+モノリスはデメリットを上げて、  
+マイクロサービスはメリットを上げてませんか。
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
+### 2. 最近のシステム開発
+
+モノリスのメリット
+
+1. 人員の確保、維持が比較的しやすい
+2. 設計がマイクロサービスよりは簡単
+3. トランザクション制御が比較的簡単
+
+etc.
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
+### 2. 最近のシステム開発
+
+マイクロサービスのデメリット
+
+1. パフォーマンスが下がる
+2. 機能分割の設計が難しい
+3. トランザクション制御が難しい
+4. 障害調査が大変
+
+etc.
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
+### 2. 最近のシステム開発
+
+どちらもメリット、デメリットがある!!
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
 ### 2. 最近のシステム開発
 
 何のために、  
 「モノリス から マイクロサービス」  
 にするのか
+    </script>
+</section>
 
-1. XXXXXXXXXXXXXXX
-2. XXXXXXXXXXXXXXX
-3. XXXXXXXXXXXXXXX
-4. XXXXXXXXXXXXXXX
-5. XXXXXXXXXXXXXXX
-					</script>
-        </section>
-
-        <section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 2. 最近のシステム開発
 
-実際は、  
+マイクロサービスのメリットを享受するため。  
+つまり、  
+マイクロサービスのメリットを享受できないと  
+マイクロサービスにする意味がない。
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
+### 2. 最近のシステム開発
+
+実際、  
 モノリス(一枚岩)をただ割っただけの  
 大量の石ころ(≠マイクロサービス)  
 になりがちではないですか?
-					</script>
-        </section>
+    </script>
+</section>
 
-        <section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 2. 最近のシステム開発
 
-マイクロサービスを成功させるためには、  
-マイクロサービス間の連携が重要  
-(もちろんそれ以外にも重要なことはあります)
-					</script>
-        </section>
+マイクロサービスのメリットを享受するためには、  
+(マイクロサービスを成功させるためには、)  
+マイクロサービス間の連携が重要です。  
+※もちろんそれ以外にも重要なことはあります。
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ## そこで、Lasta RemoteApi!!
-					</script>
-				</section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 3. Lasta RemoteApi
 
 Lasta RemoteApiとは、  
@@ -236,14 +310,11 @@ LastaFluteで利用できる
 リモートAPI呼び出しの定型的なライブラリです。  
 
 [Lasta RemoteApiの説明ページ](http://dbflute.seasar.org/ja/lastaflute/howto/architecture/remoteapicall.html)  
-<span style="font-size:70%">
+    </script>
+</section>
 
-<span style="font-size:70%">
-					</script>
-        </section>
-
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 3. Lasta RemoteApi
 
 特徴
@@ -256,11 +327,11 @@ LastaFluteで利用できる
 * HTTP Methodの決定  
   Behaviorでの呼び出しメソッドで決定  
   e.g. doRequestGet(), doRequestPost()
-					</script>
-				</section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 3. Lasta RemoteApi
 
 特徴
@@ -271,140 +342,281 @@ LastaFluteで利用できる
   データ変換の仕方や、接続にまつわるオプションなどのルールを設定
 * デフォルト＆メソッドごと  
   ルールをBehaviorごとにデフォルト設定、個別のメソッドごとに変更可能
-					</script>
-				</section>
-				
-				<section data-markdown>
-					<script type="text/template">
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
 ### 3. Lasta RemoteApi
 
 アーキテクチャ
 
 ![Lasta RemoteApi アーキテクチャ](./image/remoteapi-architecture.png)
-					</script>
-				</section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 3. Lasta RemoteApi
 
 Behaviorクラスのサンプルコード
 
-TODO コードもしくはコードへのURLリンク
-					</script>
-        </section>
+```
+public class RemoteMaihamaHangarBhv extends LastaRemoteBehavior {
 
-				<section data-markdown>
-					<script type="text/template">
+    public RemoteMaihamaHangarBhv(RequestManager requestManager) {
+        super(requestManager);
+    }
+
+    // Initialize
+    @Override
+    protected void yourDefaultRule(FlutyRemoteApiRule rule) {
+        rule.sendQueryBy(new LaQuerySender(new FlVacantMappingPolicy()));
+
+        JsonMappingOption jsonMappingOption = new JsonMappingOption();
+        rule.sendBodyBy(new LaJsonSender(requestManager, jsonMappingOption));
+        rule.receiveBodyBy(new LaJsonReceiver(requestManager, jsonMappingOption));
+    }
+
+    @Override
+    protected String getUrlBase() {
+        return "http://localhost:8092/hangar";
+    }
+
+    // Execute
+    public void requestSignin(RemoteHgSigninParam param) {
+        doRequestPost(void.class, "/auth/signin", noMoreUrl(), param, rule -> {});
+    }
+
+    public RemoteHgMypageReturn requestMypage() {
+        return doRequestGet(RemoteHgMypageReturn.class, "/mypage", noMoreUrl(), noQuery(), rule -> {});
+    }
+
+    public RemoteHgPagingReturn＜RemoteHgProductRowReturn＞ requestProductList(OptionalThing＜Integer＞ pageNumber,
+            RemoteHgProductSearchParam param) {
+        return doRequestPost(new ParameterizedRef＜RemoteHgPagingReturn＜RemoteHgProductRowReturn＞＞() {
+        }.getType(), "/product/list/search/{pageNumber}", moreUrl(pageNumber), param, rule -> {});
+    }
+}
+```
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
 ### 3. Lasta RemoteApi
 
 Behaviorクラスの呼び出しのサンプルコード
 
-TODO コードもしくはコードへのURLリンク
-					</script>
-        </section>
+```
+remoteMaihamaHangarBhv.requestSignin(param);
+RemoteHgMypageReturn ret = remoteMaihamaHangarBhv.requestMypage();
+RemoteHgPagingReturn＜RemoteHgProductRowReturn＞ ret
+        = remoteMaihamaHangarBhv.requestProductList(OptionalThing.of(3), param);
+```
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 3. Lasta RemoteApi
 
 ### DEMO  
-TODO ゆとりあれば文章化
-					</script>
-				</section>
 
-				<section data-markdown>
-					<script type="text/template">
+https://github.com/lastaflute/lastaflute-test-fortress  
+
+* package  
+  org.docksidestage.remote.maihama.hangar
+* class  
+  RemoteMaihamaHangarBhvTest
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
 ### 3. Lasta RemoteApi
 
 Lasta RemoteApiを使えば、  
 リモートAPI呼び出しが簡単にできます。
-					</script>
-        </section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ただ、これだけだとちょっと物足りない。。。
-          </script>
-				</section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### LastaFlute(DBFlute)といえば、
 ### 自動生成!!
-          </script>
-        </section>
+    </script>
+</section>
 
-				<section data-markdown>
-          <script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### なので、作りました。
-          </script>
-        </section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 4. RemoteApiGen
 
 DBFluteのFreeGenの機能を使って、  
-Lasta RemoteApiのBehaviorを自動生成
-          </script>
-			  </section>
+Lasta RemoteApiのBehaviorを自動生成。
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 4. RemoteApiGen
 
 特徴
 
-* XXXXXXXXXXXXXXX
-* XXXXXXXXXXXXXXX
-* XXXXXXXXXXXXXXX
-					</script>
-        </section>
+* Swaggerのjsonファイルから自動生成
+* DBFluteライクなインターフェース
+* 自動生成ルールを細かく指定可能
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 4. RemoteApiGen
 
-特徴
+自動生成関連のファイル
 
-* XXXXXXXXXXXXXXX
-* XXXXXXXXXXXXXXX
-					</script>
-				</section>
+* dbflute_xxx/freegen/remoteapi/*.vm  
+  自動生成のためのテンプレートファイル
+* dbflute_xxx/freegen/remoteapi/RemoteApiRule.js  
+  自動生成のための(デフォルト)ルールファイル
+  ※Java8のNashornがES5のため、ES5ベース。
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 4. RemoteApiGen
 
-アーキテクチャ
+自動生成関連のファイル
 
-TODO 画像
-					</script>
-				</section>
+* dbflute_xxx/dfprop/freeGenMap.dfprop  
+  DBFluteのFreeGen機能でリモートAPIの自動生成するための設定ファイル。
+* src/main/resources/remoteapi/swagger/yyy_swagger.json  
+  リモート先のswaggerファイル
+* src/main/resources/remoteapi/swagger/yyy_rule.js  
+  自動生成のための(override)ルールファイル
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
-### 4. RemoteApiGen(ちょっと脱線)
+<section data-markdown>
+    <script type="text/template">
+### 4. RemoteApiGen  Swaggerとは
 
-Swaggerとは
+ちょっと脱線  
+Swaggerとは?  
+(ご存じの方が多いと思いますが。)
+    </script>
+</section>
 
-TODO 文章(Swaggerの概要とSwagger UI)
-					</script>
-				</section>
+<section data-markdown>
+	<script type="text/template">
+### 4. RemoteApiGen Swaggerとは
 
-				<section data-markdown>
-					<script type="text/template">
-### 4. RemoteApiGen(ちょっと脱線)
+https://swagger.io/
 
-LastaFlute + LastaDoc で Swagger
+THE WORLD'S MOST POPULAR API TOOLING
 
-TODO 文章
-					</script>
-        </section>
+Swagger is the world’s largest framework of API developer tools for the OpenAPI Specification(OAS),
+enabling development across the entire API lifecycle, from design and documentation, to test and deployment.
+	</script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+	<script type="text/template">
+### 4. RemoteApiGen Swaggerとは
+
+https://swagger.io/
+
+世界で最も人気のあるAPIツール
+
+Swaggerは、OpenAPI仕様（OAS）のためのAPI開発ツールの世界最大のフレームワークであり、
+APIのライフサイクル全体にわたって、設計から文書化、テストおよびデプロイまでを可能にします。
+	</script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
+### 4. RemoteApiGen Swaggerとは
+
+OpenAPI Specification  
+(旧名:Swagger Specification)  
+https://swagger.io/specification/  
+
+APIを記述するためのフォーマットをベースに  
+いろいろな機能を提供しています。  
+    </script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+### 4. RemoteApiGen Swaggerとは
+
+Swaggerには主な機能が4つあります。  
+* Swagger Core  
+  JavaのコードからSwagger Specificationを生成するためのJavaライブラリ
+* Swagger Codegen  
+  Swagger Specificationからクライアントコード生成するコマンドラインツール
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+### 4. RemoteApiGen Swaggerとは
+
+Swaggerには主な機能が4つあります。  
+* Swagger UI  
+  Swagger Specificationから動的にドキュメントを生成するツール
+* Swagger Editor  
+  ブラウザ上で動くSwagger Specificationのエディタ  
+  リアルタイムで構文チェック、可視化
+	</script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
+### 4. RemoteApiGen Swaggerとは
+
+SpringやJavaEEで、Swaggerの機能を  
+簡単に利用するためのライブラリがあります。
+* SpringMVC + SpringFox  
+* JAX-RS + Swagger Jaxrs2
+    </script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+### 4. RemoteApiGen Swaggerとは
+
+もちろん、LastaFluteにもあります!!
+
+* LastaFlute + LastaDoc
+
+DEMO
+	</script>
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+### 4. RemoteApiGen  Swaggerとは
+
+「ちょっと脱線」終わり
+	</script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
 ### 4. RemoteApiGen
 
 リモートAPI呼び出し先のシステムから、  
@@ -414,70 +626,70 @@ Swaggerのjsonファイルが提供されれば、
 
 e.g.  
 LastaFlute + LastaDoc  
-Spring + SpringFox  
+SpringMVC + SpringFox  
 JAX-RS + Swagger Jaxrs2
-					</script>
-				</section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 4. RemoteApiGen
 
 リモートAPI呼び出し先のシステムから、  
 Swaggerのjsonファイルが提供されない場合は、  
 Swagger Editorで、  
-Swaggerのjsonファイルを作ればOK。  
+Swaggerのjsonファイルを作ればOKです。  
 (慣れるまでは大変ですが、後々保守など楽です。)
-					</script>
-        </section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						### 4. RemoteApiGen
+<section data-markdown>
+    <script type="text/template">
+### 4. RemoteApiGen
 
 ### DEMO  
-TODO ゆとりあれば文章化
-					</script>
-				</section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 5. 機能追加予定
-						
-TODO 文章(Lastadocにremoteapiを追加。)
-					</script>
-				</section>
 
-				<section data-markdown>
-					<script type="text/template">
+LastaFluteのLastaDocにRemoteApiのドキュメントも自動生成するようにします。(近日公開)
+![LastaFluteのLastaDoc](http://dbflute.seasar.org/data/snapshot/lastaflute/lastaflute-lastadoc-actionmapping-snapshot.png "LastaFluteのLastaDoc")
+</script>
+    </script>
+</section>
+
+<section data-markdown>
+    <script type="text/template">
 ### 6. Special Thanks(順不同)
 
 * 株式会社U-NEXT様  
   「Lasta RemoteApi + RemoteApiGen」のOSS化
 * 株式会社LUXA様  
-	「Lasta RemoteApi + RemoteApiGen」の  
-	利用フィードバック
-	
+    「Lasta RemoteApi + RemoteApiGen」の  
+    利用フィードバック
   
-本当にありがとうございますm(__)m
-					</script>
-				</section>
+本当にありがとうございましたm(__)m
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ### 7. 質問タイム
-					</script>
-				</section>
+    </script>
+</section>
 
-				<section data-markdown>
-					<script type="text/template">
+<section data-markdown>
+    <script type="text/template">
 ご清聴ありがとうございました。
 
 END
-					</script>
-				</section>
-			</div>
-		</div>
+    </script>
+</section>
+            </div>
+        </div>
 
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
